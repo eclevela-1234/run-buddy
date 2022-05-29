@@ -1,5 +1,15 @@
 #Run-Buddy
 
-Practice with div elements
+## Purpose
+A website that offers fitness training services.
 
-[Link to Deployed site](https://eclevela-1234.github.io/run-buddy/)
+## Built with 
+
+* HTML
+* CSS
+
+## Website
+https://eclevela-1234.github.io/run-buddy/
+
+## Contribution
+Made with ❤️ by Eliot Cleveland
