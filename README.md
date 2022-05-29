@@ -11,7 +11,6 @@ A website that offers fitness training services.
 ## Website
 https://eclevela-1234.github.io/run-buddy/
 
-Test
 
 ## Contribution
 Made with ❤️ by Eliot Cleveland
