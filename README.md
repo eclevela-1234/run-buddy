@@ -14,3 +14,6 @@ https://eclevela-1234.github.io/run-buddy/
 
 ## Contribution
 Made with ❤️ by Eliot Cleveland
+
+
+### ©️2019 Run Buddy, Inc 
