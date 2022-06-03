@@ -3,6 +3,7 @@
   --secondary-color: #024e76;
   --tertiary-color: #39a6b2;
 }
+
 * {
   box-sizing: border-box;
   margin: 0;
@@ -108,62 +109,6 @@ section {
 }
 
 /* HERO STYLES START */
-.checkbox-wrapper input, .radio-wrapper input {
-  opacity: 0;
-}
-
-.checkbox-wrapper label, .radio-wrapper label {
-  position: relative;
-  left: 10px;
-  margin: 10px;
-  line-height: 1.6;
-}
-.checkbox-wrapper label::before, .radio-wrapper label::before {
-  content: "";
-  height: 20px;
-  width: 20px;
-  background: rgba(255, 255, 255, 0.75);  
-  border: 1px solid var(--secondary-color);  
-  position: absolute;
-  top: -4px;
-  left: -30px;
-}
-
-.radio-wrapper label::before {
-  border-radius: 50%;
-}
-.radio-wrapper label::after {
-  content: "";
-  width: 20px;
-  height: 20px;
-  border-radius: 50%;
-  background: var(--secondary-color);
-  position: absolute;
-  left: -29px;
-  top: -3px;
-  background-image: radial-gradient(circle, #39a6b2, #024e76);
-}
-
-.checkbox-wrapper label::after {
-  content: "";
-  height: 6px;
-  width: 14px;
-  border-left: 2px solid var(--secondary-color);
-  border-bottom: 2px solid var(--secondary-color);
-  position: absolute;
-  left: -26px;
-  top: 1px;
-  transform: rotate(-58deg);
-}
-.checkbox-wrapper input + label::after, 
-.radio-wrapper input + label::after {
-  content: none;
-}
-
-.checkbox-wrapper input:checked + label::after, 
-.radio-wrapper input:checked + label::after {
-  content: "";
-}
 .hero {
   background-image: url('../images/hero-bg.jpg');
   background-size: cover;
@@ -203,7 +148,7 @@ section {
 }
 
 .hero-form button:hover {
-  background-color: var(--tertiary-color);
+  background-color: var(--tertiary-color);  
 }
 
 .hero-form h3 {
@@ -221,13 +166,13 @@ section {
   font-size: 16px;
   color: var(--secondary-color);
   width: 100%;
-  margin-bottom: 15px;
+  margin-bottom: 15px; 
   border-radius: 10px;
-  background-color: rgba(255, 255, 255, 0.75);
+  background-color: rgba(255,255,255, 0.75);
 }
 
 .form-input:focus {
-  background-color: rgba(255, 255, 255, 1);
+  background-color: rgba(255,255,255, 1);
   outline: none;
 }
 
@@ -242,9 +187,67 @@ section {
   padding: 10px 20px;
   font-size: 16px;
   border-radius: 10px;
+} 
+
+.checkbox-wrapper input, .radio-wrapper input {
+  opacity: 0;
 }
 
+.checkbox-wrapper label, .radio-wrapper label {
+  position: relative;
+  left: 10px;
+  margin: 10px;
+  line-height: 1.6;
+}
 
+.checkbox-wrapper label::before, .radio-wrapper label::before {
+  content: "";
+  height: 20px;
+  width: 20px;
+  background: rgba(255, 255, 255, 0.75);  
+  border: 1px solid var(--secondary-color);  
+  position: absolute;
+  top: -4px;
+  left: -30px;
+}
+
+.radio-wrapper label::before {
+  border-radius: 50%;
+}
+
+.radio-wrapper label::after {
+  content: "";
+  height: 20px;
+  width: 20px;
+  border-radius: 50%;
+  background: var(--secondary-color);
+  position: absolute;
+  left: -29px;
+  top: -3px;
+  background-image: radial-gradient(circle, var(--tertiary-color), var(--secondary-color));
+}
+
+.checkbox-wrapper label::after {
+  content: "";
+  height: 6px;
+  width: 14px;
+  border-left: 2px solid var(--secondary-color);
+  border-bottom: 2px solid var(--secondary-color);
+  position: absolute;
+  left: -26px;
+  top: 1px;
+  transform: rotate(-58deg);
+}
+
+.checkbox-wrapper input + label::after, 
+.radio-wrapper input + label::after {
+  content: none;
+}
+
+.checkbox-wrapper input:checked + label::after, 
+.radio-wrapper input:checked + label::after {
+  content: "";
+}
 /* HERO STYLES END */
 
 
@@ -269,7 +272,6 @@ section {
 /* SECTION TITLE STYLES END */
 
 /* WHAT WE DO STYLES */
-
 .intro p {
   line-height: 1.7;
   color: var(--tertiary-color);
@@ -282,7 +284,7 @@ section {
 
 
 /* WHAT YOU DO STYLES START */
-.steps {
+.steps { 
   background: var(--primary-color);
 }
 
@@ -290,7 +292,6 @@ section {
   margin: 50px auto;
   padding-bottom: 50px;
   width: 80%;
-  border-bottom: 1px solid --tertiary-color;
   display: flex;
   flex-wrap: wrap;
   align-items: center;
@@ -337,7 +338,6 @@ section {
   line-height: 1.5;
   color: var(--secondary-color);
 }
-
 /* WHAT YOU DO STYLES END */
 
 /* MEET THE TRAINERS START */
@@ -420,9 +420,8 @@ section {
   font-style: normal;
 }
 
-.contact-form input,
-.contact-form textarea {
-  border: 1px solid --secondary-color;
+.contact-form input, .contact-form textarea {
+  border: 1px solid var(--secondary-color);
   display: block;
   padding: 7px 15px;
   font-size: 16px;
@@ -431,12 +430,11 @@ section {
   margin-bottom: 15px;
   margin-top: 5px;
   border-radius: 10px;
-  background-color: rgba(255, 255, 255, 0.75);
+  background-color: rgba(255,255,255, 0.75);
 }
 
-.contact-form input:focus,
-.contact-form textarea:focus {
-  background-color: rgba(255, 255, 255, 1);
+.contact-form input:focus, .contact-form textarea:focus {
+  background-color: rgba(255,255,255, 1);
   outline: none;
 }
 
@@ -459,7 +457,6 @@ section {
 .contact-info a {
   color: var(--primary-color);
 }
-
 /* REACH OUT STYLES END */
 
 /* UTILITIES */
@@ -503,8 +500,7 @@ section {
     width: 100%;
   }
 
-  .hero-cta,
-  .hero-form {
+  .hero-cta, .hero-form {
     width: 100%;
   }
   
@@ -515,12 +511,12 @@ section {
   .section-title {
     width: 80%;
   }
-
+  
   .trainer {
     flex: 0 70%;
   }
-
-  .contact-info iframe {
+  
+  .contact-info iframe{
     flex: 1 100%;
   }
 }
@@ -553,8 +549,7 @@ section {
     flex: 100%;  
   }
 
-  .trainer-bio h3,
-  .trainer-bio h4 {
+  .trainer-bio h3, .trainer-bio h4 {
     display: block;
   }
 }
@@ -567,5 +562,25 @@ section {
 
   .section-title {
     width: 95%;
+  }
+
+  .intro p {
+    width: 100%;
+  }
+
+  .trainer {
+    flex: 0 100%;
+  }
+
+  .contact-info {
+    text-align: center;
+  }
+
+  .contact-info > * {
+    flex: 0 100%;
+  }
+
+  .contact-form {
+    order: 3;
   }
 }
