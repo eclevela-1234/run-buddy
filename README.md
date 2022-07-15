@@ -1,5 +1,7 @@
 # Run-Buddy Inc.
 
+![Preview Image](./assets/images/run-bud-preview.png)
+
 ## Purpose
 A website that offers fitness training services.
 
